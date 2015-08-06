@@ -10,7 +10,7 @@ $caption = "Message from Orenda CRM Services";
 $message_mail = <<< MSG
 <html>
     <head>
-        <title>Message from Orenda CRM</title>
+        <title></title>
         <meta charset= "utf-8"/>
         <style>
             h3{
@@ -28,10 +28,11 @@ $message_mail = <<< MSG
             }
         </style>
     </head>
-    <body>
+    <body>   
     <h3>
-        $caption
+    Custommers Support - Orend CRM 
     </h3>
+    <br/>    
     <p>
         $message
     </p>
@@ -54,6 +55,8 @@ $notification = <<< NOTE
 <div class="alert-success slick">
    <p>You have just sended the following E-mail to <b><u>$full_name</u></b><?p>
 </div>
+<br/>
+<br/>
 NOTE;
 if($mail){
   echo $notification;  
