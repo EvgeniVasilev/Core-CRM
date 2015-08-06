@@ -21,6 +21,13 @@ $body = <<< EOD
       </small>    
    </h2>
    </div>
+   <div class="row">
+   <div class="col-lg-12">
+   <a class="pull-right btn btn-primary" href="mail.php?id=$id">Send mail to $row[cstm_fname]&nbsp;$row[cstm_sname]</a>
+   </div>
+   <br/>
+   <br/>
+   </div>
    <div class="well">
    <p><b><u>1. Personal Details:</u></b></p>
    <p><b>First Name:</b>&nbsp;$row[cstm_fname]</p>
