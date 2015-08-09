@@ -1,26 +1,31 @@
-.window{
-	min-height: 530px;
+.window {
+    min-height: 530px;
 }
 
-label{
-	color: white;
-	padding: 0 3px;
-	border-radius: 3px;
-	font-size: 14px;
-	cursor: pointer !important;
+label {
+    color: white;
+    padding: 0 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer !important;
 }
 
-.slick{
+.slick {
     padding: 14px 10px 5px 20px !important;
     border-radius: 5px;
 }
 
-.flat{
-	border-radius: 0px;
+i{
+    position: relative;
+    top: -1px;
 }
 
-#footer{
-	background-color: #EBEBEB;
-	padding: 20px 0;
-	margin: auto;
+.flat {
+    border-radius: 0px;
+}
+
+#footer {
+    background-color: #EBEBEB;
+    padding: 20px 0;
+    margin: auto;
 }

@@ -13,5 +13,5 @@ create table if not exists crm_customres (
  comments varchar (255) not null default 'Nothing said!',
  cstm_date_joined  date not null default '0000-00-00',   
  Primary Key (cstm_id),
- Fulltext Key (cstm_fname, cstm_sname, cstm_lname, cstm_country)   
+ Fulltext Key IdxText (cstm_fname, cstm_sname, cstm_lname, cstm_country)   
 )

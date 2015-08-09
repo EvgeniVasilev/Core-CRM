@@ -24,13 +24,13 @@ $message_mail = <<< MSG
             p{
                 font-family: Arial, Verdana,sans-serif;
                 font-size: 14px;
-                text-alin: justify;
+                text-align: justify;
             }
         </style>
     </head>
     <body>   
     <h3>
-    Custommers Support - Orend CRM 
+    Customers Support - Orenda CRM
     </h3>
     <br/>    
     <p>
@@ -45,25 +45,25 @@ MSG;
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html; charset=utf-8";
 $headers .= "From: <evgeni.vasilev1209@gmail.com>";
-$headers .= "X-Mailer:PHP  /". phpversion();
+$headers .= "X-Mailer:PHP  /" . phpversion();
 
-$mail = mail($to,$caption,$message_mail, $headers);
+$mail = mail($to, $caption, $message_mail, $headers);
 ?>
-<div class="container-fluid window">
-<?php
-$notification = <<< NOTE
+    <div class="container-fluid window">
+        <?php
+        $notification = <<< NOTE
 <div class="alert-success slick">
    <p>You have just sended the following E-mail to <b><u>$full_name</u></b><?p>
 </div>
 <br/>
 <br/>
 NOTE;
-if($mail){
-  echo $notification;  
-}
-echo $message_mail;
- ?>
-</div>
+        if ($mail) {
+            echo $notification;
+        }
+        echo $message_mail;
+        ?>
+    </div>
 
 <?php
 require_once './templates/footer.php';    
